@@ -1,0 +1,51 @@
+services:
+  directory:
+    build: .
+    command: uvicorn directory.main:app --host 0.0.0.0 --port 8000
+    environment:
+      LABLINKS_DIRECTORY_DB: /data/directory.sqlite
+    ports:
+      - "8000:8000"
+    volumes:
+      - directory_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/health').read()"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  lab_a_node:
+    build: .
+    command: uvicorn lab_a_node.main:app --host 0.0.0.0 --port 8001
+    environment:
+      LABLINKS_NODE_DB: /data/lab_a.sqlite
+    ports:
+      - "8001:8001"
+    volumes:
+      - lab_a_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8001/health').read()"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  lab_b_node:
+    build: .
+    command: uvicorn lab_b_node.main:app --host 0.0.0.0 --port 8002
+    environment:
+      LABLINKS_NODE_DB: /data/lab_b.sqlite
+    ports:
+      - "8002:8002"
+    volumes:
+      - lab_b_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8002/health').read()"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  directory_data:
+  lab_a_data:
+  lab_b_data:
+

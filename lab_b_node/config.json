@@ -1,0 +1,45 @@
+{
+  "lab_id": "lab-b",
+  "display_name": "Lab B",
+  "node_endpoint": "http://localhost:8002",
+  "default_policy_id": "policy-lab-b-outbound",
+  "claims": [],
+  "policies": [
+    {
+      "policy_id": "policy-lab-b-outbound",
+      "lab_id": "lab-b",
+      "name": "Outbound coordination policy",
+      "description": "Lab B can discover claims, submit rerun requests, and review provenance from partner labs.",
+      "allowlisted_requester_labs": [
+        "lab-b"
+      ],
+      "allowed_outputs": [
+        "result_summary",
+        "provenance"
+      ],
+      "denied_output_classes": [
+        "raw_data"
+      ],
+      "requires_human_review_for": [
+        "full_artifact_bundle"
+      ],
+      "divergence_threshold": 0.08
+    }
+  ],
+  "execution_templates": [
+    {
+      "template_id": "template-partner-rerun-request",
+      "version": "2026.03",
+      "description": "Outbound template metadata for requesting partner reruns.",
+      "input_parameters": {
+        "validation_split": "scaffold",
+        "score_adjustment": 0.0
+      },
+      "released_outputs": [
+        "result_summary",
+        "provenance"
+      ]
+    }
+  ],
+  "runtime_templates": []
+}

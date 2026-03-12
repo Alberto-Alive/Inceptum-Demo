@@ -1,0 +1,85 @@
+{
+  "claim_id": "lablinks:qsar:auroc:001",
+  "title": "Kinase assay QSAR maintains high AUROC under scaffold-aware validation",
+  "assertion": {
+    "type": "result",
+    "subject": "kinase_assay_qsar_predictor",
+    "predicate": "achieves_auroc",
+    "object": 0.91,
+    "metric_name": "auroc",
+    "context": {
+      "validation_split": "scaffold",
+      "output_policy": "summary_only"
+    },
+    "summary": "Lab A reports that its kinase inhibitor assay score predictor reaches AUROC 0.91 on scaffold-aware validation."
+  },
+  "status": "under_investigation",
+  "owner": {
+    "lab_id": "lab-a",
+    "node_id": "node:lab-a",
+    "node_endpoint": "http://localhost:8001"
+  },
+  "policy": {
+    "policy_id": "policy-lab-a-rerun"
+  },
+  "execution_template": {
+    "template_id": "template-qsar-rerun",
+    "version": "2026.03",
+    "description": "Deterministic rerun of a toy kinase QSAR scorer against Lab A local assay features.",
+    "input_parameters": {
+      "validation_split": "scaffold",
+      "score_adjustment": 0.0,
+      "rerun_mode": "standard"
+    },
+    "released_outputs": [
+      "result_summary",
+      "provenance"
+    ]
+  },
+  "created_at": "2026-03-11T09:00:00+00:00",
+  "updated_at": "2026-03-11T09:07:00+00:00",
+  "version": "1.0.0",
+  "evidence": {
+    "baseline_result": {
+      "metric_name": "auroc",
+      "metric_value": 0.91,
+      "expected_metric_value": 0.91,
+      "units": "score",
+      "summary": "Published baseline on Lab A local kinase assay data.",
+      "released_outputs": [
+        "result_summary",
+        "provenance"
+      ]
+    },
+    "supporting_refs": [
+      "lablinks:provenance:claim-baseline:001"
+    ]
+  },
+  "links": {
+    "latest_provenance_id": "lablinks:provenance:001",
+    "latest_run_id": "lablinks:run:001",
+    "contradictions": [
+      "lablinks:contradiction:001"
+    ],
+    "linked_tasks": [
+      "lablinks:task:001"
+    ],
+    "relationships": []
+  },
+  "last_replication_outcome": {
+    "request_id": "lablinks:request:001",
+    "run_id": "lablinks:run:001",
+    "claim_version": "1.0.0",
+    "outcome_type": "contradiction_detected",
+    "observed_metric_value": 0.76,
+    "summary": "Cross-lab rerun contradicted the published baseline and opened an investigation.",
+    "requester_lab": "lab-b",
+    "policy_decision_id": "lablinks:policy-decision:001",
+    "observed_at": "2026-03-11T09:07:00+00:00"
+  },
+  "tags": [
+    "qsar",
+    "kinase",
+    "assay-score"
+  ]
+}

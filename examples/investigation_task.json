@@ -1,0 +1,37 @@
+{
+  "task_id": "lablinks:task:001",
+  "claim_id": "lablinks:qsar:auroc:001",
+  "triggering_run_id": "lablinks:run:001",
+  "linked_contradiction_id": "lablinks:contradiction:001",
+  "trigger_type": "contradiction",
+  "summary": "Cross-lab rerun diverged from the published claim and requires follow-up investigation before the claim is extended.",
+  "recommended_next_step": "Compare Lab A and Lab B validation settings, rerun with matched scaffold split parameters, and review provenance side-by-side.",
+  "recommended_workflow": "workflow:matched-scaffold-rerun",
+  "possible_causes": [
+    {
+      "cause": "validation_split_mismatch",
+      "confidence": 0.92,
+      "rationale": "The rerun may have used a different scaffold partitioning than the published baseline."
+    },
+    {
+      "cause": "parameter_drift",
+      "confidence": 0.71,
+      "rationale": "The rerun template may have inherited different calibration parameters."
+    },
+    {
+      "cause": "feature_pipeline_difference",
+      "confidence": 0.54,
+      "rationale": "A local feature pipeline branch may have diverged since publication."
+    }
+  ],
+  "priority": "high",
+  "status": "open",
+  "created_at": "2026-03-11T09:07:00+00:00",
+  "assigned_lab": "lab-a",
+  "assigned_agent_role": "investigation-agent",
+  "context": {
+    "baseline_metric_value": 0.91,
+    "rerun_metric_value": 0.76,
+    "threshold": 0.08
+  }
+}

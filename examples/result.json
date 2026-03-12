@@ -1,0 +1,32 @@
+{
+  "run_id": "lablinks:run:001",
+  "request_id": "lablinks:request:001",
+  "claim_id": "lablinks:qsar:auroc:001",
+  "claim_version": "1.0.0",
+  "execution_template_id": "template-qsar-rerun",
+  "policy_decision_id": "lablinks:policy-decision:001",
+  "status": "completed",
+  "outcome_type": "contradiction_detected",
+  "result_summary": {
+    "metric_name": "auroc",
+    "metric_value": 0.76,
+    "expected_metric_value": 0.91,
+    "units": "score",
+    "summary": "Cross-lab rerun diverged from the published baseline. Local execution stayed inside Lab A and only approved summary outputs were released.",
+    "released_outputs": [
+      "result_summary",
+      "provenance"
+    ]
+  },
+  "contradiction": {
+    "contradiction_id": "lablinks:contradiction:001",
+    "baseline_metric_value": 0.91,
+    "rerun_metric_value": 0.76,
+    "divergence": 0.15,
+    "threshold": 0.08,
+    "rule": "abs(baseline-rerun) >= 0.08",
+    "severity": "critical",
+    "detected_at": "2026-03-11T09:07:00+00:00"
+  },
+  "investigation_task_id": "lablinks:task:001"
+}

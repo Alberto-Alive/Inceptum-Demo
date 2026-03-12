@@ -1,0 +1,2 @@
+"""Lab B node entrypoints."""
+
