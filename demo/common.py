@@ -6,10 +6,10 @@ import os
 from pydantic import BaseModel
 
 
-CLAIM_ID = os.getenv("LABLINKS_CLAIM_ID", "lablinks:qsar:auroc:001")
-DIRECTORY_URL = os.getenv("LABLINKS_DIRECTORY_URL", "http://localhost:8000")
-LAB_A_URL = os.getenv("LABLINKS_LAB_A_URL", "http://localhost:8001")
-LAB_B_URL = os.getenv("LABLINKS_LAB_B_URL", "http://localhost:8002")
+CLAIM_ID = os.getenv("INCEPTUM_CLAIM_ID", "inceptum:qsar:auroc:001")
+DIRECTORY_URL = os.getenv("INCEPTUM_DIRECTORY_URL", "http://localhost:8000")
+LAB_A_URL = os.getenv("INCEPTUM_LAB_A_URL", "http://localhost:8001")
+LAB_B_URL = os.getenv("INCEPTUM_LAB_B_URL", "http://localhost:8002")
 
 
 def render_model(model: BaseModel) -> str:

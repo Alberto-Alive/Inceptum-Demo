@@ -1,8 +1,8 @@
 {
-  "task_id": "lablinks:task:001",
-  "claim_id": "lablinks:qsar:auroc:001",
-  "triggering_run_id": "lablinks:run:001",
-  "linked_contradiction_id": "lablinks:contradiction:001",
+  "task_id": "inceptum:task:001",
+  "claim_id": "inceptum:qsar:auroc:001",
+  "triggering_run_id": "inceptum:run:001",
+  "linked_contradiction_id": "inceptum:contradiction:001",
   "trigger_type": "contradiction",
   "summary": "Cross-lab rerun diverged from the published claim and requires follow-up investigation before the claim is extended.",
   "recommended_next_step": "Compare Lab A and Lab B validation settings, rerun with matched scaffold split parameters, and review provenance side-by-side.",

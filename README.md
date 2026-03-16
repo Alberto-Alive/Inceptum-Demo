@@ -1,8 +1,8 @@
-# LabLinks PoC
+# Inceptum PoC
 
-LabLinks is lab-to-lab AI agent infrastructure for coordinating scientific work through claim objects, reruns, provenance, and contradiction handling without centralizing raw data.
+Inceptum is lab-to-lab AI agent infrastructure for coordinating scientific work through claim objects, reruns, provenance, and contradiction handling without centralizing raw data.
 
-This repository is a reference proof-of-concept for the core LabLinks primitive: a claim object represented as a Claim Manifest, discovered through a shared directory, rerun under local policy, returned with provenance, and escalated into a structured investigation task when the rerun conflicts with the published claim.
+This repository is a reference proof-of-concept for the core Inceptum primitive: a claim object represented as a Claim Manifest, discovered through a shared directory, rerun under local policy, returned with provenance, and escalated into a structured investigation task when the rerun conflicts with the published claim.
 
 Raw data and local execution remain inside each lab node. Only approved outputs and provenance leave the node.
 
@@ -25,7 +25,7 @@ Raw data and local execution remain inside each lab node. Only approved outputs 
 
 ## Why this matters
 
-**LabLinks turns cross-lab scientific coordination from ad hoc human workflow into structured, policy-aware, provenance-backed infrastructure for AI agents and labs.**
+**Inceptum turns cross-lab scientific coordination from ad hoc human workflow into structured, policy-aware, provenance-backed infrastructure for AI agents and labs.**
 
 ## Architecture
 

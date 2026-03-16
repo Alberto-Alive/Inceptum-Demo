@@ -1,5 +1,5 @@
 {
-  "claim_id": "lablinks:qsar:auroc:001",
+  "claim_id": "inceptum:qsar:auroc:001",
   "title": "Kinase assay QSAR maintains high AUROC under scaffold-aware validation",
   "assertion": {
     "type": "result",
@@ -52,29 +52,29 @@
       ]
     },
     "supporting_refs": [
-      "lablinks:provenance:claim-baseline:001"
+      "inceptum:provenance:claim-baseline:001"
     ]
   },
   "links": {
-    "latest_provenance_id": "lablinks:provenance:001",
-    "latest_run_id": "lablinks:run:001",
+    "latest_provenance_id": "inceptum:provenance:001",
+    "latest_run_id": "inceptum:run:001",
     "contradictions": [
-      "lablinks:contradiction:001"
+      "inceptum:contradiction:001"
     ],
     "linked_tasks": [
-      "lablinks:task:001"
+      "inceptum:task:001"
     ],
     "relationships": []
   },
   "last_replication_outcome": {
-    "request_id": "lablinks:request:001",
-    "run_id": "lablinks:run:001",
+    "request_id": "inceptum:request:001",
+    "run_id": "inceptum:run:001",
     "claim_version": "1.0.0",
     "outcome_type": "contradiction_detected",
     "observed_metric_value": 0.76,
     "summary": "Cross-lab rerun contradicted the published baseline and opened an investigation.",
     "requester_lab": "lab-b",
-    "policy_decision_id": "lablinks:policy-decision:001",
+    "policy_decision_id": "inceptum:policy-decision:001",
     "observed_at": "2026-03-11T09:07:00+00:00"
   },
   "tags": [

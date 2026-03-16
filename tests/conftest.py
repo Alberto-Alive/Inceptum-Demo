@@ -5,8 +5,8 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from lablinks_poc.directory_app import create_app as create_directory_app
-from lablinks_poc.lab_node_app import create_app as create_lab_node_app
+from inceptum_poc.directory_app import create_app as create_directory_app
+from inceptum_poc.lab_node_app import create_app as create_lab_node_app
 
 
 ROOT = Path(__file__).resolve().parents[1]

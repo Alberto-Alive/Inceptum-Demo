@@ -1,10 +1,10 @@
 {
-  "run_id": "lablinks:run:001",
-  "request_id": "lablinks:request:001",
-  "claim_id": "lablinks:qsar:auroc:001",
+  "run_id": "inceptum:run:001",
+  "request_id": "inceptum:request:001",
+  "claim_id": "inceptum:qsar:auroc:001",
   "claim_version": "1.0.0",
   "execution_template_id": "template-qsar-rerun",
-  "policy_decision_id": "lablinks:policy-decision:001",
+  "policy_decision_id": "inceptum:policy-decision:001",
   "status": "completed",
   "outcome_type": "contradiction_detected",
   "result_summary": {
@@ -19,7 +19,7 @@
     ]
   },
   "contradiction": {
-    "contradiction_id": "lablinks:contradiction:001",
+    "contradiction_id": "inceptum:contradiction:001",
     "baseline_metric_value": 0.91,
     "rerun_metric_value": 0.76,
     "divergence": 0.15,
@@ -28,5 +28,5 @@
     "severity": "critical",
     "detected_at": "2026-03-11T09:07:00+00:00"
   },
-  "investigation_task_id": "lablinks:task:001"
+  "investigation_task_id": "inceptum:task:001"
 }

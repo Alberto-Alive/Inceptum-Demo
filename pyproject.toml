@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lablinks-poc"
+name = "inceptum-poc"
 version = "0.1.0"
-description = "Reference LabLinks proof-of-concept for cross-lab claim coordination."
+description = "Reference Inceptum proof-of-concept for cross-lab claim coordination."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -28,5 +28,5 @@ markers = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["directory*", "lab_a_node*", "lab_b_node*", "lablinks_poc*", "sdk*"]
+include = ["directory*", "lab_a_node*", "lab_b_node*", "inceptum_poc*", "sdk*"]
 

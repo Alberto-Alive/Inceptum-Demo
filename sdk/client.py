@@ -4,7 +4,7 @@ from typing import Any
 
 import httpx
 
-from lablinks_poc.models import (
+from inceptum_poc.models import (
     CapabilitySummary,
     ClaimManifest,
     InvestigationTask,
@@ -19,7 +19,7 @@ from lablinks_poc.models import (
 )
 
 
-class LabLinksClient:
+class InceptumClient:
     def __init__(
         self,
         directory_url: str | None = None,

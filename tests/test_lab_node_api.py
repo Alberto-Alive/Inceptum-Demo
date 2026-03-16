@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 
 
-CLAIM_ID = "lablinks:qsar:auroc:001"
+CLAIM_ID = "inceptum:qsar:auroc:001"
 
 
 def approved_submission(requester_lab: str, requester_endpoint: str, outputs: list[str]) -> dict:
@@ -60,7 +60,7 @@ def test_cross_lab_request_run_provenance_and_investigation_task(lab_a_client) -
     request_payload = request_response.json()
     assert request_payload["status"] == "approved"
     assert request_payload["requester"]["lab_id"] == "lab-b"
-    assert request_payload["policy_decision"]["policy_decision_id"].startswith("lablinks:policy-decision:")
+    assert request_payload["policy_decision"]["policy_decision_id"].startswith("inceptum:policy-decision:")
     assert request_payload["agent_decision"]["decision"] == "request_rerun"
 
     run_response = lab_a_client.post("/runs", json={"request_id": request_payload["request_id"]})

@@ -12,7 +12,7 @@ def utc_now() -> datetime:
 
 
 def new_id(prefix: str) -> str:
-    return f"lablinks:{prefix}:{uuid4().hex[:12]}"
+    return f"inceptum:{prefix}:{uuid4().hex[:12]}"
 
 
 def stable_digest(payload: Any) -> str:

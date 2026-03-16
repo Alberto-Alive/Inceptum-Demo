@@ -6,8 +6,8 @@ from typing import Any
 from fastapi import FastAPI, HTTPException, Request as FastAPIRequest
 from pydantic import ValidationError
 
-from lablinks_poc.config import LabNodeConfig, load_lab_node_config
-from lablinks_poc.models import (
+from inceptum_poc.config import LabNodeConfig, load_lab_node_config
+from inceptum_poc.models import (
     CapabilitySummary,
     ClaimManifest,
     Contradiction,
@@ -26,8 +26,8 @@ from lablinks_poc.models import (
     RunResultResponse,
     ResultSummary,
 )
-from lablinks_poc.storage import JsonSqliteStore
-from lablinks_poc.utils import new_id, stable_digest, utc_now
+from inceptum_poc.storage import JsonSqliteStore
+from inceptum_poc.utils import new_id, stable_digest, utc_now
 
 
 class LabNodeService:
@@ -145,7 +145,7 @@ class LabNodeService:
             request_id=request_record.request_id,
             claim_id=claim.claim_id,
             claim_version=claim.version,
-            initiated_by=request_record.requester.agent_id or "lablinks-poc-demo",
+            initiated_by=request_record.requester.agent_id or "inceptum-poc-demo",
             requested_by_lab=request_record.requester.lab_id,
             executed_by_lab=self.config.lab_id,
             execution_template_id=claim.execution_template.template_id,
@@ -537,9 +537,9 @@ def create_app(config_path: str, db_path: str) -> FastAPI:
         yield
 
     app = FastAPI(
-        title=f"LabLinks Node: {config.display_name}",
+        title=f"Inceptum Node: {config.display_name}",
         version="0.1.0",
-        summary="Reusable lab node for local policy, execution, and provenance in the LabLinks PoC.",
+        summary="Reusable lab node for local policy, execution, and provenance in the Inceptum PoC.",
         lifespan=lifespan,
     )
 

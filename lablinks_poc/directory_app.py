@@ -4,8 +4,8 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Request as FastAPIRequest
 
-from lablinks_poc.models import ClaimManifest, HealthResponse, ResetResponse
-from lablinks_poc.storage import JsonSqliteStore
+from inceptum_poc.models import ClaimManifest, HealthResponse, ResetResponse
+from inceptum_poc.storage import JsonSqliteStore
 
 
 class DirectoryService:
@@ -52,9 +52,9 @@ def create_app(db_path: str) -> FastAPI:
         yield
 
     app = FastAPI(
-        title="LabLinks Directory",
+        title="Inceptum Directory",
         version="0.1.0",
-        summary="Shared claim discovery service for the LabLinks PoC.",
+        summary="Shared claim discovery service for the Inceptum PoC.",
         lifespan=lifespan,
     )
 

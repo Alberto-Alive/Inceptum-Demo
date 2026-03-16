@@ -1,4 +1,4 @@
-from sdk.client import LabLinksClient
+from sdk.client import InceptumClient
 
-__all__ = ["LabLinksClient"]
+__all__ = ["InceptumClient"]
 

@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from lablinks_poc.models import ClaimManifest, InvestigationTask, ProvenanceBundle, Request, Run
+from inceptum_poc.models import ClaimManifest, InvestigationTask, ProvenanceBundle, Request, Run
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,9 +19,9 @@ def load_example(path: str) -> dict:
 
 def sample_run() -> dict:
     return {
-        "run_id": "lablinks:run:001",
-        "request_id": "lablinks:request:001",
-        "claim_id": "lablinks:qsar:auroc:001",
+        "run_id": "inceptum:run:001",
+        "request_id": "inceptum:request:001",
+        "claim_id": "inceptum:qsar:auroc:001",
         "claim_version": "1.0.0",
         "executing_lab": "lab-a",
         "execution_template_id": "template-qsar-rerun",
@@ -32,13 +32,13 @@ def sample_run() -> dict:
         },
         "status": "completed",
         "outcome_type": "contradiction_detected",
-        "policy_decision_id": "lablinks:policy-decision:001",
+        "policy_decision_id": "inceptum:policy-decision:001",
         "started_at": "2026-03-11T09:06:30+00:00",
         "finished_at": "2026-03-11T09:07:00+00:00",
         "result_summary": load_example("examples/result.json")["result_summary"],
-        "provenance_id": "lablinks:provenance:001",
+        "provenance_id": "inceptum:provenance:001",
         "contradiction": load_example("examples/result.json")["contradiction"],
-        "investigation_task_id": "lablinks:task:001",
+        "investigation_task_id": "inceptum:task:001",
     }
 
 

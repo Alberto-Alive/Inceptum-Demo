@@ -1,12 +1,12 @@
-## Why LabLinks Matters
+## Why Inceptum Matters
 
-LabLinks is open infrastructure for AI-enabled scientific coordination.
+Inceptum is open infrastructure for AI-enabled scientific coordination.
 
 The immediate problem is simple: labs increasingly want AI systems and external collaborators to help verify, reproduce, and extend scientific results, but today that work is fragmented across papers, ELNs, shared drives, emails, custom scripts, and manual approvals. That makes replication slow, provenance weak, and AI difficult to use safely.
 
-LabLinks proposes a different model: represent scientific work as structured claim objects, let labs expose policy-safe actions over those objects, keep private data and execution local, and return only approved outputs with provenance.
+Inceptum proposes a different model: represent scientific work as structured claim objects, let labs expose policy-safe actions over those objects, keep private data and execution local, and return only approved outputs with provenance.
 
-## Core Value of LabLinks
+## Core Value of Inceptum
 
 | Core value | Why it matters now |
 | --- | --- |
@@ -22,7 +22,7 @@ LabLinks proposes a different model: represent scientific work as structured cla
 | Multiple labs can pursue different goals in parallel on the same scientific problem. | One lab can verify reproducibility while another tests generalization and another investigates failure modes, all against the same claim graph. |
 | Scientific coordination becomes action-oriented rather than document-oriented. | Labs and agents coordinate through claims, requests, runs, provenance, and investigation tasks rather than just files and notes. |
 
-## What LabLinks Could Become
+## What Inceptum Could Become
 
 | Future direction | What it could become at scale |
 | --- | --- |
@@ -39,12 +39,12 @@ LabLinks proposes a different model: represent scientific work as structured cla
 
 ## Short Framing
 
-LabLinks’ core value is practical: it gives labs and AI agents a safe, structured way to coordinate scientific work without losing privacy, provenance, or focus.
+Inceptum’ core value is practical: it gives labs and AI agents a safe, structured way to coordinate scientific work without losing privacy, provenance, or focus.
 
 Its longer-term potential is larger: it could become open infrastructure for AI-enabled science, where claims are continuously tested, updated, routed, and investigated across many labs and many agents.
 
 ## Short Summary
 
-LabLinks addresses a practical and urgent problem: how to let labs and AI agents collaborate on scientific work without losing privacy, provenance, safety, or focus.
+Inceptum addresses a practical and urgent problem: how to let labs and AI agents collaborate on scientific work without losing privacy, provenance, safety, or focus.
 
 If successful, it could become a public-good coordination layer for AI-enabled science: a system where scientific claims are not just published, but discoverable, testable, challengeable, and operational across labs.

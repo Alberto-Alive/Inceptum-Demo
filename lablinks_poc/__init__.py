@@ -1,4 +1,4 @@
-"""Shared implementation for the LabLinks proof-of-concept."""
+"""Shared implementation for the Inceptum proof-of-concept."""
 
 __all__ = ["__version__"]
 

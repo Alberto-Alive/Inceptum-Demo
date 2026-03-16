@@ -5,7 +5,7 @@
   "default_policy_id": "policy-lab-a-rerun",
   "claims": [
     {
-      "claim_id": "lablinks:qsar:auroc:001",
+      "claim_id": "inceptum:qsar:auroc:001",
       "title": "Kinase assay QSAR maintains high AUROC under scaffold-aware validation",
       "assertion": {
         "type": "result",
@@ -58,11 +58,11 @@
           ]
         },
         "supporting_refs": [
-          "lablinks:provenance:claim-baseline:001"
+          "inceptum:provenance:claim-baseline:001"
         ]
       },
       "links": {
-        "latest_provenance_id": "lablinks:provenance:claim-baseline:001",
+        "latest_provenance_id": "inceptum:provenance:claim-baseline:001",
         "latest_run_id": null,
         "contradictions": [],
         "linked_tasks": [],

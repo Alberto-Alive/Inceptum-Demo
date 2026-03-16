@@ -1,6 +1,6 @@
 {
-  "request_id": "lablinks:request:denied:001",
-  "claim_id": "lablinks:qsar:auroc:001",
+  "request_id": "inceptum:request:denied:001",
+  "claim_id": "inceptum:qsar:auroc:001",
   "target_lab": "lab-a",
   "target_claim_version": "1.0.0",
   "requester": {
@@ -33,7 +33,7 @@
   },
   "status": "denied",
   "policy_decision": {
-    "policy_decision_id": "lablinks:policy-decision:denied:001",
+    "policy_decision_id": "inceptum:policy-decision:denied:001",
     "policy_id": "policy-lab-a-rerun",
     "outcome": "denied",
     "reason": "Local policy blocks release of the requested outputs: raw_data",

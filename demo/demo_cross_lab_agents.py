@@ -1,14 +1,14 @@
 from __future__ import annotations
 
 from demo.common import CLAIM_ID, DIRECTORY_URL, LAB_A_URL, LAB_B_URL, render_model, step
-from lablinks_poc.models import AgentDecision, RequestSubmission, RequesterIdentity, RunCreate, ScoredReason
-from sdk import LabLinksClient
+from inceptum_poc.models import AgentDecision, RequestSubmission, RequesterIdentity, RunCreate, ScoredReason
+from sdk import InceptumClient
 
 
 def main() -> None:
-    directory = LabLinksClient(directory_url=DIRECTORY_URL)
-    lab_a = LabLinksClient(node_url=LAB_A_URL)
-    lab_b = LabLinksClient(node_url=LAB_B_URL)
+    directory = InceptumClient(directory_url=DIRECTORY_URL)
+    lab_a = InceptumClient(node_url=LAB_A_URL)
+    lab_b = InceptumClient(node_url=LAB_B_URL)
 
     directory.reset_demo_state(directory=True)
     lab_a.reset_demo_state()

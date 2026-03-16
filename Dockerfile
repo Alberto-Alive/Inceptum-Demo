@@ -9,7 +9,7 @@ COPY pyproject.toml README.md ./
 COPY directory ./directory
 COPY lab_a_node ./lab_a_node
 COPY lab_b_node ./lab_b_node
-COPY lablinks_poc ./lablinks_poc
+COPY inceptum_poc ./inceptum_poc
 COPY sdk ./sdk
 COPY demo ./demo
 COPY docs ./docs

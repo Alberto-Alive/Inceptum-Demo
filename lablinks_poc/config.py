@@ -5,7 +5,7 @@ from pathlib import Path
 
 from pydantic import Field
 
-from lablinks_poc.models import ClaimManifest, ExecutionTemplate, Policy, StrictModel
+from inceptum_poc.models import ClaimManifest, ExecutionTemplate, Policy, StrictModel
 
 
 class RuntimeTemplateConfig(StrictModel):

@@ -1,2 +1,2 @@
-"""Demo scripts for the LabLinks proof-of-concept."""
+"""Demo scripts for the Inceptum proof-of-concept."""
 

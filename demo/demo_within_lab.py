@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 from demo.common import CLAIM_ID, LAB_A_URL, render_model, step
-from lablinks_poc.models import AgentDecision, RequestSubmission, RequesterIdentity, RunCreate, ScoredReason
-from sdk import LabLinksClient
+from inceptum_poc.models import AgentDecision, RequestSubmission, RequesterIdentity, RunCreate, ScoredReason
+from sdk import InceptumClient
 
 
 def main() -> None:
-    lab_a = LabLinksClient(node_url=LAB_A_URL)
+    lab_a = InceptumClient(node_url=LAB_A_URL)
 
     lab_a.reset_demo_state()
 

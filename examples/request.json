@@ -1,6 +1,6 @@
 {
-  "request_id": "lablinks:request:001",
-  "claim_id": "lablinks:qsar:auroc:001",
+  "request_id": "inceptum:request:001",
+  "claim_id": "inceptum:qsar:auroc:001",
   "target_lab": "lab-a",
   "target_claim_version": "1.0.0",
   "requester": {
@@ -38,7 +38,7 @@
   },
   "status": "completed",
   "policy_decision": {
-    "policy_decision_id": "lablinks:policy-decision:001",
+    "policy_decision_id": "inceptum:policy-decision:001",
     "policy_id": "policy-lab-a-rerun",
     "outcome": "approved",
     "reason": "Requester is allowlisted and only summary outputs were requested.",
