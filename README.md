@@ -1,4 +1,4 @@
-# Inceptum PoC
+# Inceptum ~ *nothing begins without us*
 
 Inceptum is lab-to-lab AI agent infrastructure for coordinating scientific work through claim objects, reruns, provenance, and contradiction handling without centralizing raw data.
 
