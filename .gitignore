@@ -18,3 +18,4 @@ dist/
 directory/data/
 lab_a_node/data/
 lab_b_node/data/
+node_modules/
